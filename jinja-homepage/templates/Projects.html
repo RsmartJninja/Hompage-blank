@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Projects</title>
-</head>
-<body>
-<p>PROJECTS ....these are the projects of somebody</p>
-</body>
-</html>
+
+{% extends "base.html" %}
+
+{% block title %}My projects{% endblock title %}
+
+{% block page_content %}
+    <h1>My projects</h1>
+    <p>I made the following projects:</p>
+    <ul>
+        <li>FakeBook</li>
+        <li>Boogle</li>
+        <li>Forensic program</li>
+    </ul>
+{% endblock page_content %}

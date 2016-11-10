@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Blog</title>
+{% extends "base.html" %}
+
+    {% block title %}Blog{% endblock title %}
 </head>
+
 <body>
+{% block page_content %}
+
 <p>BLOG ....this is the blog of somebody</p>
+
+{% endblock page_content %}
 </body>
 </html>

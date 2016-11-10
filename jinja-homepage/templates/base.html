@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock title %}</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <a href="/">Home</a> |
+        <a href="http://localhost:16080/about">About me</a> |
+        <a href="http://localhost:16080/projects">My projects</a> |
+        <a href="http://localhost:16080/blog">Blog</a> |
+        <a href="http://localhost:16080/contact">Contact</a>
+
+        <br>
+        <br>
+
+        {% block page_content %}
+        {% endblock page_content %}
+
+    </body>
+</html>
